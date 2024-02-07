@@ -22,6 +22,7 @@ jobs:
       with:
         name: TestCommitPush
         commit_message: edit edit_me.txt from job1
+        access_token: ${{ secrets.ACTIONS_AUTH_TOKEN }}
         target_branch: main
         force: 0
   
@@ -41,5 +42,6 @@ jobs:
       with:
         name: TestCommitPush
         commit_message: edit edit_me.txt from job2
+        access_token: ${{ secrets.ACTIONS_AUTH_TOKEN }}
         target_branch: main
         force: 0
