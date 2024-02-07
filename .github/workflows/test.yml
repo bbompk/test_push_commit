@@ -20,12 +20,9 @@ jobs:
     - name: Commit and Push changes
       uses: GuillaumeFalourd/git-commit-push@v1.3
       with:
-        email: test@gmail.com
         name: TestCommitPush
-        commit_message: edit edit_me.txt
+        commit_message: edit edit_me.txt from job1
         target_branch: main
-        remote_repository: https://github.com/bbompk/test_commit_push
-        access_token: ${{ secrets.ACTIONS_AUTH_TOKEN }}
         force: 0
   
   job2:
@@ -42,10 +39,7 @@ jobs:
     - name: Commit and Push changes
       uses: GuillaumeFalourd/git-commit-push@v1.3
       with:
-        email: test@gmail.com
         name: TestCommitPush
-        commit_message: edit edit_me.txt
+        commit_message: edit edit_me.txt from job2
         target_branch: main
-        remote_repository: https://github.com/bbompk/test_commit_push
-        access_token: ${{ secrets.ACTIONS_AUTH_TOKEN }}
         force: 0
